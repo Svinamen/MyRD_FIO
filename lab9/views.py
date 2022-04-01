@@ -3,6 +3,7 @@ from django.shortcuts import render
 from .models import Author, Genre, Book
 from .forms import AuthorForm, GenreForm, BookForm
 from scipy.optimize import linprog
+from django.conf import settings
 import numpy as np
 import matplotlib.pyplot as plt
 import os

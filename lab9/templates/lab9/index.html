@@ -1,6 +1,5 @@
 {% extends "lab9/layout.html" %}
 {% block c %}
-
 <form action="input" method="post">
     {% csrf_token %}
     {{ form_A }}
@@ -19,5 +18,4 @@
 <form action="start">
     <input type="submit", value="Open table">
 </form>
-
 {% endblock c %}

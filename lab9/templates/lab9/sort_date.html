@@ -1,11 +1,10 @@
 {% extends "lab9/layout.html" %}
 {% block c %}
-            <ul>
+    <ul>
     {% for i in dd %}
     <li> {{i}} </li>
     {% endfor %}
     </ul>
-
     <form action="start">
     <input type="submit", value="Open table">
 </form>
