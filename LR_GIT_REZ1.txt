@@ -1,0 +1,32 @@
+0211342 HEAD@{0}: commit (merge): master new image1 style1
+2ec20cf HEAD@{1}: checkout: moving from develop to master
+2697415 HEAD@{2}: merge styles1: Fast-forward
+6af93e2 HEAD@{3}: checkout: moving from styles1 to develop
+2697415 HEAD@{4}: rebase (continue) (finish): returning to refs/heads/styles1
+2697415 HEAD@{5}: commit: styles1 mod index1.html
+6af93e2 HEAD@{6}: rebase (start): checkout develop
+1abd190 HEAD@{7}: checkout: moving from develop to styles1
+6af93e2 HEAD@{8}: merge images1: Fast-forward
+17ffc80 HEAD@{9}: checkout: moving from images1 to develop
+6af93e2 HEAD@{10}: checkout: moving from styles1 to images1
+1abd190 HEAD@{11}: commit: styles1 mod index, add style1
+17ffc80 HEAD@{12}: checkout: moving from develop to styles1
+17ffc80 HEAD@{13}: checkout: moving from images1 to develop
+6af93e2 HEAD@{14}: commit: images1 add image1, index1.html
+17ffc80 HEAD@{15}: checkout: moving from develop to images1
+17ffc80 HEAD@{16}: commit: develop add index1.html
+e360be0 HEAD@{17}: checkout: moving from master to develop
+2ec20cf HEAD@{18}: commit (merge): merge master style, mod index.html
+d316588 HEAD@{19}: merge images: Fast-forward
+22a7a97 HEAD@{20}: checkout: moving from styles to master
+2a6be2d HEAD@{21}: commit: styles mod index.html
+bdc1aeb HEAD@{22}: commit: styles add syle1.css
+e360be0 HEAD@{23}: checkout: moving from develop to styles
+e360be0 HEAD@{24}: checkout: moving from images to develop
+d316588 HEAD@{25}: commit: images mod index.html
+c9effbe HEAD@{26}: commit: images add flower1,flower2
+e360be0 HEAD@{27}: checkout: moving from develop to images
+e360be0 HEAD@{28}: commit: develop create index.html
+22a7a97 HEAD@{29}: checkout: moving from master to develop
+22a7a97 HEAD@{30}: commit: add gitignore1
+368162c HEAD@{31}: commit (initial): 1_commit_readme
