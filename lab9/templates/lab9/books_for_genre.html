@@ -1,0 +1,12 @@
+{% extends "lab9/layout.html" %}
+{% block c %}
+    <ul>
+    {% for i in bo %}
+    <li> Books: {{ i.name }} </li>
+    {% endfor %}
+    </ul>
+<form action="start">
+    <input type="submit", value="Open table">
+</form>
+
+{% endblock c %}

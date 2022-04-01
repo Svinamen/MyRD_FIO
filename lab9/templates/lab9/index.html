@@ -1,0 +1,21 @@
+{% extends "lab9/layout.html" %}
+{% block c %}
+<form action="input" method="post">
+    {% csrf_token %}
+    {{ form_A }}
+    <input type="submit" value="Submit", name="Author">
+</form>
+<form action="input" method="post">
+    {% csrf_token %}
+    {{ form_G }}
+    <input type="submit" value="Submit", name="Genre">
+</form>
+<form action="input" method="post">
+    {% csrf_token %}
+    {{ form_B }}
+    <input type="submit" value="Submit", name="Book">
+</form>
+<form action="start">
+    <input type="submit", value="Open table">
+</form>
+{% endblock c %}

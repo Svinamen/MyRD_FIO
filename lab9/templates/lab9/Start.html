@@ -1,0 +1,41 @@
+{% extends "lab9/layout.html" %}
+{% block c %}
+    <ul>
+    {% for i in Author %}
+    <li> Author id: {{ i.id }}; First name: {{ i.first_name }}; Last name: {{ i.last_name}}; Birth year: {{ i.birth_year }} </li>
+    {% endfor %}
+    {% for i in Genre %}
+    <li> Genre id: {{ i.id }}; name genre: {{ i.name }}; Description: {{ i.description}} </li>
+    {% endfor %}
+    {% for i in Book %}
+    <li> Book id: {{ i.id }}; Name book: {{ i.name }}; Name author: {{ i.author.name }}; Genre: {{ i.genre.name}}; Year book: {{i.year}}; Pages: {{ i.pages }} </li>
+    {% endfor %}
+    </ul>
+    <form action="input">
+    <input type="submit", value="Open input row">
+</form>
+    <form action="books_for_genre" method="post">
+    {% csrf_token %}
+        <p><select name="Genres">
+            {% for i in Genre %}
+            <option value={{i.name}}>{{i.name}}</option>
+            {% endfor%}
+        </select>
+        <input type="submit" value="Result">
+    </form>
+
+        <form action="author_for_genres" method="post">
+    {% csrf_token %}
+        <p><select name="authors">
+            {% for i in Author %}
+            <option value={{i.first_name}}>{{i.first_name}} {{i.last_name}}</option>
+            {% endfor%}
+        </select>
+        <input type="submit" value="Result">
+    </form>
+
+    <form action="sort_date">
+    <input type="submit" value="Sort date">
+    </form>
+{% endblock c %}
+

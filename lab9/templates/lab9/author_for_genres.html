@@ -1,0 +1,12 @@
+{% extends "lab9/layout.html" %}
+{% block c %}
+        <ul>
+    {% for i in at %}
+    <li> Genre: {{ i.genre.name }} </li>
+    {% endfor %}
+    </ul>
+<form action="start">
+    <input type="submit", value="Open table">
+</form>
+
+{% endblock c %}
