@@ -7,21 +7,16 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 from django.conf import settings
-
 def home(request):
     return HttpResponse('<h1>Lab9 </h1>')
-
 def renders(request):
     return render(request, 'lab9/Start.html', {"Author": Author.objects.all(), "Genre":Genre.objects.all(), "Book":Book.objects.all()})
-
 def books_for_genre(request):
     g = request.POST['Genres']
     return render(request, 'lab9/books_for_genre.html',{'bo':Book.objects.filter(genre__name=g)})
-
 def author_for_genres(request):
     a = request.POST['authors']
     return render(request, 'lab9/author_for_genres.html', {'at':Book.objects.filter(author__first_name=a)})
-
 def index(request):
     form_A = AuthorForm()
     form_G = GenreForm()
